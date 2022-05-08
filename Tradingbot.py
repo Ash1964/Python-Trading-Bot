@@ -2,8 +2,13 @@ import alpaca_trade_api as tradeapi
 
 class Martingale(object):
     def __init__(self):
+        
+        # Put Alpaca Key Here
         self.key = 'PKX4S566XZDB4K617G09'
+        
+        # Put Secret Alpaca Key Here
         self.secret = 'ATOCJbQOXBdPAm7bUYW9QGwB7MWVCBikbkY81R8I'
+       
         self.alpaca_endpoint = 'https://paper-api.alpaca.markets'
         self.api = tradeapi.REST(self.key, self.secret, self.alpaca_endpoint)
 
